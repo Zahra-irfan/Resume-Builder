@@ -1,0 +1,102 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Resume Builder</title> 
+    <link rel="stylesheet" href="stylee.css"> 
+</head> 
+<body>
+    <div class="heading">
+        <header><h1>Resume Builder ❁</h1></header>
+        <form id="form" method="POST" action="your-action-url">
+            <fieldset>
+                <section class="personalInfo">
+                    <h2>Personal Information</h2>
+                    <fieldset>
+                        <legend><h3>Details</h3></legend>
+                        <label for="name"><b>Name:</b></label>
+                        <input type="text" name="name" id="name" aria-label="Your first name" placeholder="Zahra" required>
+                        
+                        <label for="middleName"><b>Middle Name:</b></label>
+                        <input type="text" name="middleName" id="middleName" aria-label="Your middle name" placeholder="Memon" required>
+                        
+                        <label for="lastName"><b>Last Name:</b></label>
+                        <input type="text" name="lastName" id="lastName" aria-label="Your last name" placeholder="Irfan" required>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend><h3>Contact Information</h3></legend>
+                        <label for="phone"><b>Phone Number:</b></label>
+                        <input type="text" name="phone" id="phone" pattern="[0-9]+" aria-label="Your phone number" placeholder="+92 333 1234567" required>
+                        
+                        <label for="email"><b>Email Address:</b></label>
+                        <input type="email" name="email" id="email" aria-label="Your email address" required>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend><h3>Residential Address</h3></legend>
+                        <label for="country"><b>Country:</b></label>
+                        <input type="text" name="country" id="country" aria-label="Your country" placeholder="Sindh" required>
+                        
+                        <label for="province"><b>Province:</b></label>
+                        <input type="text" name="province" id="province" aria-label="Your province" placeholder="Sindh" required>
+                        
+                        <label for="city"><b>City:</b></label>
+                        <input type="text" name="city" id="city" aria-label="Your city" placeholder="Karachi" required>
+                        
+                        <label for="address"><b>Address:</b></label>
+                        <input type="text" name="address" id="address" aria-label="Your street address" placeholder="ABC street" required>
+                    </fieldset>
+                </section>
+            </fieldset>
+
+            <fieldset>
+                <section class="qualification">
+                    <h2>Qualification</h2>
+                    <fieldset>
+                        <legend><h3>Education</h3></legend>
+                        <label for="lastQualification"><b>Last Qualification:</b></label>
+                        <input type="text" name="lastQualification" id="lastQualification" aria-label="Your last qualification" required>
+                        
+                        <label for="certifications"><b>Certifications:</b></label>
+                        <input type="text" name="certifications" id="certifications" aria-label="Your certifications" required>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend><h3>Work Experience</h3></legend>
+                        <label for="jobTitle"><b>Job Title:</b></label>
+                        <input type="text" name="jobTitle" id="jobTitle" aria-label="Your job title" required>
+                        
+                        <label for="companyName"><b>Company Name:</b></label>
+                        <input type="text" name="companyName" id="companyName" aria-label="Your company name" required>
+                        
+                        <label for="jobDuration"><b>Job Duration:</b></label>
+                        <input type="text" name="jobDuration" id="jobDuration" aria-label="Duration of employment" required>
+                        
+                        <label for="jobDescription"><b>Job Description:</b></label>
+                        <input type="text" name="jobDescription" id="jobDescription" aria-label="Description of your job responsibilities" required>
+                    </fieldset>
+                </section>
+            </fieldset>
+
+            <fieldset>
+                <section>
+                    <h2>Skills and Hobbies</h2>
+                    <fieldset>
+                        <legend><h3>Skills</h3></legend>
+                        <label for="skills"><b>Skills:</b></label>
+                        <input type="text" name="skills" id="skills" aria-label="Your skills" required>
+                    </fieldset>
+                    
+                    <fieldset>
+                        <legend><h3>Hobbies</h3></legend>
+                        <label for="hobbies"><b>Hobbies:</b></label>
+                        <input type="text" name="hobbies" id="hobbies" aria-label="Your hobbies" required>
+                    </fieldset>
+                </section>
+            </fieldset>
+            <button type="submit">Proceed</button>
+        </form>
+    </div>
+</body> 
+</html>
